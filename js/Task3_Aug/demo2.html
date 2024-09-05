@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent"></div>
+    
+</body>
+<script>
+    //CreateElement
+const heading=document.createElement('h1');
+heading.innerHTML='JavaScript is awesome';
+heading.classList.add('title');
+const parent=document.querySelector('.parent');
+parent.appendChild(heading)
+console.log(heading);
+
+var subheading=document.createElement('h3');
+subheading.innerHTML='Good Bye bye..'
+heading.insertAdjacentElement('beforebegin', subheading)
+parent.appendChild(subheading)
+
+</script>
+</html>

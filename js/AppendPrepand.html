@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    <style>
+    .box{
+min-height:200px;
+width:300px;
+border:2px solid black;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Jquery Append & Prepand Method</h1>
+   <div class="box">
+<h2>Text Box</h2>
+   <p> hel,fksf ṁfbkjf cwjrgwc dwtr hwhfryuwvc  nnrfcc  hhrfkqu,jvchr nfqfHQER bjdaskdfgk jjfglwekcmv sm mfem,avjerht vjqfw    wgejtbf wnfjefwsncv wmrg</p>
+
+   </div> 
+   <button id="append">appendbtn</button>
+   <button id="prepand">prepandbtn</button>
+   <script>
+    $(document).ready(function(){
+        $('#append').click(function(){
+            $('.box').append("<h2>Vandana Gupta</h2>")
+          
+        })
+        $('#prepand').click(function(){
+            $('.box').prepend("<h2>Ritesh Jaiswal</h2>")
+          
+        })
+    })
+   </script>
+</body>
+</html>

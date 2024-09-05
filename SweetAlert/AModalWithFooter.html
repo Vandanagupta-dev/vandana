@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+</head>
+<body>  
+    <button id="btn">Try me?</button>
+    <script>
+        function demo() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: '<a href="#">Why do I have this issue?</a>'
+            });
+        }
+
+        // Attach the event listener to the button
+        document.getElementById('btn').addEventListener('click', demo);
+    </script>
+</body>
+</html>

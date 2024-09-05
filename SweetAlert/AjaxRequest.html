@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetAlert2 Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <script>
+        function demo() {
+Swal.fire({
+    title: "Submit your Github username",
+    input: "text",
+    inputAttributes: {
+      autocapitalize: "off"
+    },
+    showCancelButton: true,
+    confirmButtonText: "Look up",
+    showLoaderOnConfirm: true,
+    preConfirm: async (login) => {
+      try {
+        const githubUrl = `
+          https://api.github.com/users/${login}
+        `;
+        const response = await fetch(githubUrl);
+        if (!response.ok) {
+          return Swal.showValidationMessage(`
+            ${JSON.stringify(await response.json())}
+          `);
+        }
+        return response.json();
+      } catch (error) {
+        Swal.showValidationMessage(`
+          Request failed: ${error}
+        `);
+      }
+    },
+    allowOutsideClick: () => !Swal.isLoading()
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: `${result.value.login}'s avatar`,
+        imageUrl: result.value.avatar_url
+      });
+    }
+  });
+  }
+        document.getElementById('btn').addEventListener('click', demo);
+    </script>
+</body>
+</html>

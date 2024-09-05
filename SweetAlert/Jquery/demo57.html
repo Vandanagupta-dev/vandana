@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>jquery Filtering Method</h1>
+ <div id="first" style="border: 2px solid red;background-color: blanchedalmond; height:300px;width:400px;">
+<p>Are you struggling with losing the numbering, bulleted, or tabbed formatting when copying and pasting rich text into an online form? </p>
+<p>Are you struggling with losing the numbering, bulleted, or tabbed formatting when copying and pasting rich text into an online form? </p>
+</div>
+<ul>
+ <li>Orange</li>
+ <li>Apple</li>
+ <li>Banana</li>
+ <li>Grapes</li>
+</ul>
+
+<div id="second"style="border: 2px solid red; background-color:gray; height:300px;width:400px;">
+    <p class="test">Are you struggling with losing the numbering, bulleted, or tabbed formatting when copying and pasting rich text into an online form? </p>
+    <p>Are you struggling with losing the numbering, bulleted, or tabbed formatting when copying and pasting rich text into an online form? </p>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$('p').last().css("background","violet");
+</script>
+</html>

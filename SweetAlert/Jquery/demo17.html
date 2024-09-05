@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <h2 class="text">TEXT BOX 2</h2>
+        <p>Web pages can be created and modified by using professional HTML editors.
+        However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).   
+        We believe that using a simple text editor is a good way to learn HTML.
+        Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+    </div>
+    <ul id="list">
+        <li>Orange</li>
+        <li class="test">Guava</li>
+        <li>Banana</li>
+        <li class="test">Papaya</li>
+    </ul>
+    <p class="temp">Web pages can be created and modified by using professional HTML editors.
+        However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).   
+        We believe that using a simple text editor is a good way to learn HTML.
+        Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+        </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            // Display an alert with a message
+            alert("Document is ready!");
+            
+            // Apply CSS styles using jQuery
+            $(".text").css({
+                "border": "10px solid black",
+                "color": "red" , 
+                "line-height":"2px"
+            });
+
+            $(".test").css({
+                "color": "pink", 
+                "font-weight": "bold"  
+            });
+            $(".temp").css({
+"text-align":"center",
+"font-weight":"bold",
+"border":"15px double red"
+
+            })
+        });
+    </script>
+
+</html>

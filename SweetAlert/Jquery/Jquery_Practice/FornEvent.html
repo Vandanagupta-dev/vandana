@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Form Event: focus(), blur(), change(), select(), submit()</h1>
+        <form action="" id="sform">
+            <label for="sName">Name</label>
+            <input type="text" id="sName"/><br/>
+            <label for="cClass">Class</label>
+            <input type="text" id="cClass"/><br/>
+            <label for="scountry">Country</label>
+            <select id="scountry">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <!-- Corrected duplicate value -->
+                <option value="Sri Lanka">Sri Lanka</option>
+            </select><br/>
+            <input type="submit"/>
+            <div id="text" style="border:1px solid red;"></div>
+        </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#sName, #cClass, #scountry').focus(function(){
+                $(this).css("background-color", "lime");
+            });
+            $('#sName,#cClass, #scountry').blur(function(){
+$(this).css("background-color","");
+            })
+            $('#scountry').change(function(){//ye kevl dropdown ke sath chlta h
+//$(this).css("background-color","");
+var a=$(this).val();
+$('#text').html(a);
+            });
+            $('#sNAme,#cClass').select(function(){
+    $(this).css('background-color','yellow');
+});
+$('#sform').submit(function(){
+    //console.log('form Submited');
+    alert('Form Submited');
+})
+        });
+    </script>
+</body>
+</html>

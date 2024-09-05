@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetAlert2 Example</title>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <script>
+        function demo() {
+            Swal.fire("SweetAlert2 is working!");
+            };
+        
+        document.getElementById('btn').addEventListener('dblclick', demo);
+    </script>
+</body>
+</html>

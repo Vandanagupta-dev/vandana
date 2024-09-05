@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>jquery Get Method</h1>
+    <form action="" id="sform">
+
+        <label>Name</label>
+<input type="text" aria-placeholder="Enter the Name" id="sname"></br>
+    <label>Class</label>
+    <input type="text" aria-placeholder="Enter the Class Name" id="sclass"></br></br>
+        
+    <label>Country</label>
+        <select id="scountry">
+<option value="America">America</option>
+<option value="Japan">Japan</option>
+<option value="China">China</option>
+<option value="Asia">Asia</option>
+        </select></br>
+        <input type="submit" value="Submit"/>
+     </form>
+   <script>
+    $(document).ready(function(){
+    //  $('#sform').submit(function(){
+    //    var name= $('#sname').val();
+    //    var classnname= $('#sclass').val();
+    //    var country= $('#scountry').val();
+    // alert("Hellow"  + name + "Class name is" + classnname + "country name is:" + country)
+    //     });
+
+    //for set
+        $('#sname').val("yahoo Baba..");
+        $('#sclass').val("Btech");
+    });
+   </script>
+</body>
+</html>

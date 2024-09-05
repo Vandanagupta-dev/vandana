@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" class="text">
+        <h2>TEXT bOX 2</h2>
+        <p style="border: 2px solid;">Web pages can be created and modified by using professional HTML editors.
+        However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).   
+        We believe that using a simple text editor is a good way to learn HTML.
+        Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+    </div>
+    <ul id="list">
+        <li>Orange</li>
+        <li class="test">Guava</li>
+        <li>Banana</li>
+        <li class="test">Papaya</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("ul li:eq(1)").css("border","2px solid red")
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            height:100px;
+            width:500px;
+            font-size: 15px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript KeyBoard Event: KeyPress, Keyup, Keydown</h1>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>An example of a "text" editor is Notepad on Windows or TextEdit on Mac. Other examples of text editors include Sublime Text, Atom, Visual Studio Code, Vim, and Emacs. These editors are specifically designed for creating and editing plain text files, such as source code files, configuration files, or simple notes.</p>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('body').keypress(function(){
+        $(this).css('background-color','aqua');
+
+        $('body').keyup(function(){
+$(this).css('background-color','orange');
+        });
+        $('body').keydown(function(){
+$(this).css('background-color','orange');
+        });
+    });
+});
+</script>
+</html>

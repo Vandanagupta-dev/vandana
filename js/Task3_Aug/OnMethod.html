@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border:1px solid red;
+
+        }
+        .backgroundbg{
+            background-color: pink;
+        }
+        .first{background:tan;}
+        .second{background:pink;}
+
+    </style>
+</head>
+<div id="box">
+    <h1>On method is used for appliy multiply event</h1>
+    <div id="box" class="backgroundbg">
+<h2>Text Box</h2>
+<p>Lorm ispum <span>God blessed you. Have a nice day for this weekend.</span></p>
+    </div>
+   
+   
+
+</div>
+<script>
+//    $(document).ready(function(){
+//    $("#box").on("mouseover mouseleave",function(){
+//     $(this).toggleClass("backgroundbg");
+//    })
+//    })
+$(document).ready(function(){
+    $("#box").on({
+        "click":function(){
+$(this).css("bckground","green")
+        },
+        "mouseover":function(){
+            $(this).css("bckground","yellow")
+},
+"mouseleave":function(){
+    $(this).css("bckground","aqua")
+}
+    });
+});
+</script>
+</body>
+</html>

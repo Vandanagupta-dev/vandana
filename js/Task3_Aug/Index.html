@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="heading">Welcome to the World of JS</h1>
+    <h1>This is my another heading</h1> -->
+
+    <!--<h1 id="heading">Welcome to the World of JS</h1>
+    <h1 class="heading2">This is my another heading</h1>
+    <h1 class="heading2">What is  your nic name??</h1>-->
+
+    <!-- <div class="parent">
+        <h1 class="heading">This is my another heading</h1>
+    </div> -->
+
+    <!-- <div class="parent">
+        <h1 class="heading">This is my another heading</h1>
+        <h3>This is my sub node</h3>
+    </div>  -->
+
+    <div class="parent">
+    </div>
+</body>
+<script>
+    //1-GetElementById, 2- GetElementByTagName, 3- GetElementByClassName, 
+    // const head=document.getElementById('heading')
+    // console.log(head);
+
+//4-QuerySelector, 5-querySelecttorAll
+   //const head=document.querySelector('#heading')
+  // const head=document.querySelector('.heading')
+//   const head=document.querySelectorAll('.heading2')
+//    console.log(head);
+//Traverse..
+
+//6-parentNode
+// const heading=document.querySelector('.heading')
+// const parent=heading.parentNode()
+// console.log(parent)
+
+//7-childnodes
+//const heading2=document.querySelector('.parent')
+//console.log(heading2.childNodes)
+
+//8-nextElementSibling
+//const heading4=document.querySelector('h1')
+//console.log(heading4.nextElementSibling);
+
+
+//9-previousElementSibling
+//const heading=document.querySelector('h3');
+//const heading=document.querySelector('.heading');
+//console.log(heading.nextElementSibling);
+
+//Manipulation
+// //10- innerHTML
+// var manipulate=document.querySelector('.heading')
+// manipulate.innerHTML='Hell I am manipulatingText'
+// manipulate.style.color='red';
+// manipulate.style.fontSize='100px';
+// manipulate.classList.add('title');//use for add new class
+// manipulate.classList.remove('heading');//use for remove
+
+//CreateElement
+const heading=document.createElement('h1');
+heading.innerHTML='JavaScript is awesome';
+console.log('heading')
+
+</script>
+</html>

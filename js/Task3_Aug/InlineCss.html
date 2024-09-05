@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{font-family: arial;}
+        #box{
+            padding: 10px;
+            border:1px solid red;
+
+        }
+        .first{background:tan;}
+        .second{background:pink;}
+
+    </style>
+</head>
+<div id="box">
+    <h1>jquery Class method(addClass()/removeclass()/toggleclass())</h1>
+    <div id="box">
+<h2>Text Box</h2>
+<p>Lorm ispum <span>God blessed you. Have a nice day for this weekend.</span></p>
+    </div>
+    <button id="stylebutton">Add Class</button>
+   
+
+</div>
+<script>
+   $(document).ready(function(){
+    $('#stylebutton').click(function(){
+        //$('#box').css("background","pink")
+        $('#box').css({
+            background:"red",
+            border:"2px dotted black",
+            color:"aqua"
+
+        });
+    })
+   })
+</script>
+</body>
+</html>
