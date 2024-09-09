@@ -1,0 +1,57 @@
+<!-- Sidebar -->
+<div id="sidebar">
+    <!-- Sidebar content here -->
+</div>
+
+<!-- Page Content -->
+<div id="content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Button to toggle sidebar -->
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-angle-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+            <!-- Another button to toggle sidebar -->
+            <div class="hidecover">
+                <button><i class="fa fa-angle-right"></i></button>
+            </div>
+            <!-- Other buttons and content -->
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <a href="@Url.Action("index","home")" class="navlogo">
+                    <img src="~/logo.png" alt="" height="80" />
+                </a>
+                <ul class="nav navbar-nav ml-auto ps-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("index","home")">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="getModal" data-toggle="modal" data-target="#Versioning" role="button">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Other content -->
+</div>
+
+<!-- Versioning Modal -->
+<div class="modal fade" id="Versioning" tabindex="-1" aria-labelledby="VersioningModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="VersioningModalLabel">About Automated Task Web Interface</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal content -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
